@@ -1,0 +1,435 @@
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(int v; (v=4; (( while(v > 0) (print(v); v=v-1)); print(v))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+int v
+(v=4; (( while(v > 0) (print(v); v=v-1)); print(v)))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(v=4; (( while(v > 0) (print(v); v=v-1)); print(v)))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+v=4
+(( while(v > 0) (print(v); v=v-1)); print(v))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(( while(v > 0) (print(v); v=v-1)); print(v))
+---------------
+@ Symbol table: 
+v --> 4
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 4
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(print(v); v=v-1)
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 4
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+print(v)
+v=v-1
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 4
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+v=v-1
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 4
+----------------
+@ Output stream: 
+4
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 3
+----------------
+@ Output stream: 
+4
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(print(v); v=v-1)
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 3
+----------------
+@ Output stream: 
+4
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+print(v)
+v=v-1
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 3
+----------------
+@ Output stream: 
+4
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+v=v-1
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 3
+----------------
+@ Output stream: 
+4
+3
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 2
+----------------
+@ Output stream: 
+4
+3
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(print(v); v=v-1)
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 2
+----------------
+@ Output stream: 
+4
+3
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+print(v)
+v=v-1
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 2
+----------------
+@ Output stream: 
+4
+3
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+v=v-1
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 2
+----------------
+@ Output stream: 
+4
+3
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 1
+----------------
+@ Output stream: 
+4
+3
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(print(v); v=v-1)
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 1
+----------------
+@ Output stream: 
+4
+3
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+print(v)
+v=v-1
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 1
+----------------
+@ Output stream: 
+4
+3
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+v=v-1
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 1
+----------------
+@ Output stream: 
+4
+3
+2
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+( while(v > 0) (print(v); v=v-1))
+print(v)
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+4
+3
+2
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+print(v)
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+4
+3
+2
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+4
+3
+2
+1
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+
+

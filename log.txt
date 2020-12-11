@@ -1,0 +1,3750 @@
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(int a; (int b; (a=2+3*5; (b=a+1; (print(b); (bool c; (c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+int a
+(int b; (a=2+3*5; (b=a+1; (print(b); (bool c; (c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(int b; (a=2+3*5; (b=a+1; (print(b); (bool c; (c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+int b
+(a=2+3*5; (b=a+1; (print(b); (bool c; (c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(a=2+3*5; (b=a+1; (print(b); (bool c; (c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 0
+b --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+a=2+3*5
+(b=a+1; (print(b); (bool c; (c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 0
+b --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(b=a+1; (print(b); (bool c; (c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+b=a+1
+(print(b); (bool c; (c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(b); (bool c; (c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(b)
+(bool c; (c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(bool c; (c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+bool c
+(c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(c=true and false; (bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+c --> false
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+c=true and false
+(bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+c --> false
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(bool myD; (myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+c --> false
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+bool myD
+(myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+c --> false
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(myD=false or true; (c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+c --> false
+myD --> false
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+myD=false or true
+(c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+c --> false
+myD --> false
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(c=c or false or myD and c; (if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+c=c or false or myD and c
+(if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(if (a == b) a=2*b else a=b+2; (print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+if (a == b) a=2*b else a=b+2
+(print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+a=b+2
+(print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 17
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(a); (print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(a)
+(print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(cyka blyat); (print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(cyka blyat)
+(print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print( ); (string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print( )
+(string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(string varf; (varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+string varf
+(varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(varf=test.in; (print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> 
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+varf=test.in
+(print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> 
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(varf); (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(varf)
+(open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+open(varf)
+(int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+int varc
+(read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(read(varf,varc); (print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 0
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+read(varf,varc)
+(print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 0
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(varc); (read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 15
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(varc)
+(read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 15
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(read(varf,varc); (print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 15
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+read(varf,varc)
+(print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 15
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(varc); (close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(varc)
+(close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(close(varf); (print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+close(varf)
+(print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(420 blaze it); (int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(420 blaze it)
+(int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(int v1; (v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+int v1
+(v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(v1=4; (( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 0
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+v1=4
+(( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 0
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(( while(v1 >= 2) (print(v1); v1=v1-1)); (print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 4
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 4
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(v1); v1=v1-1)
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 4
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(v1)
+v1=v1-1
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 4
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+v1=v1-1
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 4
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 3
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(v1); v1=v1-1)
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 3
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(v1)
+v1=v1-1
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 3
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+v1=v1-1
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 3
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 2
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(v1); v1=v1-1)
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 2
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(v1)
+v1=v1-1
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 2
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+v1=v1-1
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 2
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+( while(v1 >= 2) (print(v1); v1=v1-1))
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(While is done m8); (Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(While is done m8)
+(Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(Ref(int) v; (new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+Ref(int) v
+(new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(new(v,20); (Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+v --> (0,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+new(v,20)
+(Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+v --> (0,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(Ref(Ref(int)) a2; (new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+Ref(Ref(int)) a2
+(new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(new(a2,v); (wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (0,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+new(a2,v)
+(wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (0,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(wH(v, 30); (print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+wH(v, 30)
+(print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(rH(rH(a2))+5*2); (print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(rH(rH(a2))+5*2)
+(print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(v); (print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(v)
+(print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(a2); (print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(a2)
+(print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(Now we fo*k!); (fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(Now we fo*k!)
+(fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(fork(print(mom's)); (int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+fork(print(mom's))
+(int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(int v3; (Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+print(mom's)
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+int v3
+(Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(Ref(int) a3; (v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 0
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+Ref(int) a3
+(v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 0
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(v3=10; (new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (0,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 0
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+v3=10
+(new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (0,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 0
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(new(a3,22); (fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3)))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (0,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+new(a3,22)
+(fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (0,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))); (print(v3); print(rH(a3))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 22
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+fork((wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3)))))))
+(print(v3); print(rH(a3)))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 22
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(v3); print(rH(a3)))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 22
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+(wH(a3, 30); (v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3))))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 22
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(v3)
+print(rH(a3))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 22
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+wH(a3, 30)
+(v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3)))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 22
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(rH(a3))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+(v3=32; (fork(print(spaghetti)); (print(v3); print(rH(a3)))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+30
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+v3=32
+(fork(print(spaghetti)); (print(v3); print(rH(a3))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 10
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+30
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+(fork(print(spaghetti)); (print(v3); print(rH(a3))))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 32
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+30
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+fork(print(spaghetti))
+(print(v3); print(rH(a3)))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 32
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+30
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+(print(v3); print(rH(a3)))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 32
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+30
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
+@ Program state ID: 13
+------------------
+@ Execution stack: 
+print(spaghetti)
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 32
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+30
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+print(v3)
+print(rH(a3))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 32
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+30
+spaghetti
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
+@ Program state ID: 13
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 32
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+30
+spaghetti
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+print(rH(a3))
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 32
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+30
+spaghetti
+32
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 32
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+30
+spaghetti
+32
+30
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+

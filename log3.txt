@@ -1,0 +1,177 @@
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(bool a; (int v; (a=true; (if (a) v=2 else v=3; print(v)))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+bool a
+(int v; (a=true; (if (a) v=2 else v=3; print(v))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(int v; (a=true; (if (a) v=2 else v=3; print(v))))
+---------------
+@ Symbol table: 
+a --> false
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+int v
+(a=true; (if (a) v=2 else v=3; print(v)))
+---------------
+@ Symbol table: 
+a --> false
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(a=true; (if (a) v=2 else v=3; print(v)))
+---------------
+@ Symbol table: 
+a --> false
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+a=true
+(if (a) v=2 else v=3; print(v))
+---------------
+@ Symbol table: 
+a --> false
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(if (a) v=2 else v=3; print(v))
+---------------
+@ Symbol table: 
+a --> true
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+if (a) v=2 else v=3
+print(v)
+---------------
+@ Symbol table: 
+a --> true
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=2
+print(v)
+---------------
+@ Symbol table: 
+a --> true
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v)
+---------------
+@ Symbol table: 
+a --> true
+v --> 2
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> true
+v --> 2
+----------------
+@ Output stream: 
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+
+

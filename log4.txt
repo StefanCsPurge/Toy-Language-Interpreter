@@ -1,0 +1,306 @@
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(string varf; (varf=test.in; (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); close(varf)))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+string varf
+(varf=test.in; (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); close(varf))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(varf=test.in; (open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); close(varf))))))))
+---------------
+@ Symbol table: 
+varf --> 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+varf=test.in
+(open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); close(varf)))))))
+---------------
+@ Symbol table: 
+varf --> 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(open(varf); (int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); close(varf)))))))
+---------------
+@ Symbol table: 
+varf --> test.in
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+open(varf)
+(int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); close(varf))))))
+---------------
+@ Symbol table: 
+varf --> test.in
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(int varc; (read(varf,varc); (print(varc); (read(varf,varc); (print(varc); close(varf))))))
+---------------
+@ Symbol table: 
+varf --> test.in
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+int varc
+(read(varf,varc); (print(varc); (read(varf,varc); (print(varc); close(varf)))))
+---------------
+@ Symbol table: 
+varf --> test.in
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(read(varf,varc); (print(varc); (read(varf,varc); (print(varc); close(varf)))))
+---------------
+@ Symbol table: 
+varf --> test.in
+varc --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+read(varf,varc)
+(print(varc); (read(varf,varc); (print(varc); close(varf))))
+---------------
+@ Symbol table: 
+varf --> test.in
+varc --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(print(varc); (read(varf,varc); (print(varc); close(varf))))
+---------------
+@ Symbol table: 
+varf --> test.in
+varc --> 15
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+print(varc)
+(read(varf,varc); (print(varc); close(varf)))
+---------------
+@ Symbol table: 
+varf --> test.in
+varc --> 15
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(read(varf,varc); (print(varc); close(varf)))
+---------------
+@ Symbol table: 
+varf --> test.in
+varc --> 15
+----------------
+@ Output stream: 
+15
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+read(varf,varc)
+(print(varc); close(varf))
+---------------
+@ Symbol table: 
+varf --> test.in
+varc --> 15
+----------------
+@ Output stream: 
+15
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(print(varc); close(varf))
+---------------
+@ Symbol table: 
+varf --> test.in
+varc --> 50
+----------------
+@ Output stream: 
+15
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+print(varc)
+close(varf)
+---------------
+@ Symbol table: 
+varf --> test.in
+varc --> 50
+----------------
+@ Output stream: 
+15
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+close(varf)
+---------------
+@ Symbol table: 
+varf --> test.in
+varc --> 50
+----------------
+@ Output stream: 
+15
+50
+-------------
+@ File table: 
+test.in
+-------
+@ Heap:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+varf --> test.in
+varc --> 50
+----------------
+@ Output stream: 
+15
+50
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
