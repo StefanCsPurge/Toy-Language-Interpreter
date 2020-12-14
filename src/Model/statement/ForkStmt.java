@@ -25,7 +25,8 @@ public class ForkStmt implements Statement{
 
     @Override
     public IDictionary<String,Type> typeCheck(IDictionary<String,Type> typeEnv) throws Exception{
-        return statement.typeCheck(typeEnv);
+        statement.typeCheck(typeEnv.cloneD());
+        return typeEnv;
     }
 
     @Override
