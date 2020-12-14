@@ -22,7 +22,7 @@ public class GUI_Main extends Application {
         Parent mainWindow = mainLoader.load();
         mainStage.setTitle("Run program step by step");
         mainStage.setScene(new Scene(mainWindow));
-        mainStage.getScene().getStylesheets().add(getClass().getResource("darkTheme.css").toExternalForm());
+        mainStage.getScene().getStylesheets().add(getClass().getResource("../View/GUI/darkTheme.css").toExternalForm());
         mainStage.getIcons().add(new Image(GUI_Main.class.getResourceAsStream("icon.png")));
         mainStage.show();
         MainWindow mainWindowController = mainLoader.getController();
@@ -36,7 +36,7 @@ public class GUI_Main extends Application {
         secondaryStage.setTitle("Select option");
         secondaryStage.getIcons().add(new Image(GUI_Main.class.getResourceAsStream("icon.png")));
         secondaryStage.setScene(new Scene(selectWindow));
-        secondaryStage.getScene().getStylesheets().add(getClass().getResource("darkTheme.css").toExternalForm());
+        secondaryStage.getScene().getStylesheets().add(getClass().getResource("../View/GUI/darkTheme.css").toExternalForm());
         secondaryStage.show();
     }
 }
