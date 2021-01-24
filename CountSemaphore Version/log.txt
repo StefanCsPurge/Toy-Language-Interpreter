@@ -1,0 +1,49 @@
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> 20
+a2 --> (2,Ref(int))
+b --> 18
+a3 --> (3,int)
+c --> false
+v --> (1,int)
+varf --> test.in
+myD --> true
+varc --> 50
+v1 --> 1
+v3 --> 32
+----------------
+@ Output stream: 
+18
+20
+cyka blyat
+ 
+test.in
+15
+50
+420 blaze it
+4
+3
+2
+While is done m8
+40
+(1,int)
+(2,Ref(int))
+Now we fo*k!
+mom's
+10
+30
+spaghetti
+32
+30
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 30
+2 --> (1,int)
+3 --> 30
+
+
