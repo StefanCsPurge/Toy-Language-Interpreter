@@ -32,8 +32,8 @@ public class CondAssignStmt implements Statement{
         Type type1 = exp.typeCheck(typeEnv);
         if(!type1.equals(new BoolType()))
             throw new TypeMismatchException("Conditional assignment first expression is not of type bool!");
-        Type type2 = exp1.typeCheck(typeEnv);
-        Type type3 = exp2.typeCheck(typeEnv);
+        Type type2 = exp1.typeCheck(typeEnv.cloneD());
+        Type type3 = exp2.typeCheck(typeEnv.cloneD());
         Type typeVar = typeEnv.get(v);
         if(!type2.equals(type3) || !type2.equals(typeVar))
             throw new TypeMismatchException("Conditional assignment variable, 2nd expression and 3rd expression are not of the same type!");
