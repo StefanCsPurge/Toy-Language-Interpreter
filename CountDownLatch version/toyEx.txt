@@ -1,0 +1,65 @@
+
+// Toy language code m8
+
+int a; int b; a=2+3*5; b=a+1; Print(b);
+
+bool c;
+c=true and false;
+bool myD;
+myD = false or true;
+c = c or false or myD and c; 
+  // ma comment
+
+(If a==b Then 
+a=2*b 
+Else a=b+2);
+Print(a); 
+
+Print("cyka blyat");
+Print(" ");
+
+string varf;
+varf="test.in";
+Print(varf);
+openRFile(varf);
+int varc;
+readFile(varf,varc); Print(varc);
+readFile(varf,varc); Print(varc);
+closeRFile(varf);
+
+Print("420 blaze it");
+
+int v1; 
+v1=4; 
+(while(v1>=2) 
+	Print(v1); 
+	v1=v1-1); 
+
+Print("While is done m8");
+
+Ref int v; 
+new(v,20); 
+Ref Ref int a2; 
+new(a2,v); 
+wH(v,30); 
+Print(rH(rH(a2))+5*2);
+Print(v);
+Print(a2);
+
+Print("Now we fo*k!");
+fork(Print("mom's"));
+
+int v3; 
+Ref int a3; 
+v3=10; 
+new(a3,22); 
+fork( wH(a3,30); 
+      v3=32;
+      fork(Print("spaghetti"));
+      Print(v3); 
+      Print(rH(a3)) ); 
+Print(v3); 
+Print(rH(a3));
+
+
+

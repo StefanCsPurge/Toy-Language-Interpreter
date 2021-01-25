@@ -1,0 +1,972 @@
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(Ref(int) a; (Ref(int) b; (int v; (new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+Ref(int) a
+(Ref(int) b; (int v; (new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(Ref(int) b; (int v; (new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+Ref(int) b
+(int v; (new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+b --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+b --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+b --> (0,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+new(a,0)
+(new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+b --> (0,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (0,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+new(b,0)
+(wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (0,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 0
+2 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+wH(a, 1)
+(wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 0
+2 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+wH(b, 2)
+(v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=rH(a) < rH(b)?100:200
+(print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+if (rH(a) < rH(b)) v=100 else v=200
+(print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=100
+(print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+(v=rH(b)-2 > rH(a)?100:200; print(v))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=rH(b)-2 > rH(a)?100:200; print(v))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=rH(b)-2 > rH(a)?100:200
+print(v)
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+if (rH(b)-2 > rH(a)) v=100 else v=200
+print(v)
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=200
+print(v)
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 200
+----------------
+@ Output stream: 
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 200
+----------------
+@ Output stream: 
+100
+200
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(Ref(int) a; (Ref(int) b; (int v; (new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+Ref(int) a
+(Ref(int) b; (int v; (new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(Ref(int) b; (int v; (new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+Ref(int) b
+(int v; (new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+b --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+b --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(new(a,0); (new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+b --> (0,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+new(a,0)
+(new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+b --> (0,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(new(b,0); (wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (0,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+new(b,0)
+(wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (0,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(wH(a, 1); (wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 0
+2 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+wH(a, 1)
+(wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 0
+2 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(wH(b, 2); (v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+wH(b, 2)
+(v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 0
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=rH(a) < rH(b)?100:200; (print(v); (v=rH(b)-2 > rH(a)?100:200; print(v))))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=rH(a) < rH(b)?100:200
+(print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+if (rH(a) < rH(b)) v=100 else v=200
+(print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=100
+(print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(print(v); (v=rH(b)-2 > rH(a)?100:200; print(v)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+(v=rH(b)-2 > rH(a)?100:200; print(v))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=rH(b)-2 > rH(a)?100:200; print(v))
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=rH(b)-2 > rH(a)?100:200
+print(v)
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+if (rH(b)-2 > rH(a)) v=100 else v=200
+print(v)
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=200
+print(v)
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 100
+----------------
+@ Output stream: 
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 200
+----------------
+@ Output stream: 
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+b --> (2,int)
+v --> 200
+----------------
+@ Output stream: 
+100
+200
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 1
+2 --> 2
+
+
