@@ -1,0 +1,3440 @@
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(Ref(int) a; (new(a,20); (for(v=0;v<3;v=v+1); print(rH(a)))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+Ref(int) a
+(new(a,20); (for(v=0;v<3;v=v+1); print(rH(a))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(new(a,20); (for(v=0;v<3;v=v+1); print(rH(a))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+new(a,20)
+(for(v=0;v<3;v=v+1); print(rH(a)))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(for(v=0;v<3;v=v+1); print(rH(a)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+for(v=0;v<3;v=v+1)
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1)))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1)))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=0
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 20
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+2
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 40
+----------------
+@ Output stream: 
+0
+1
+2
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(Ref(int) a; (new(a,20); (for(v=0;v<3;v=v+1); print(rH(a)))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+Ref(int) a
+(new(a,20); (for(v=0;v<3;v=v+1); print(rH(a))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(new(a,20); (for(v=0;v<3;v=v+1); print(rH(a))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+new(a,20)
+(for(v=0;v<3;v=v+1); print(rH(a)))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(for(v=0;v<3;v=v+1); print(rH(a)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+for(v=0;v<3;v=v+1)
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1)))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1)))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=0
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 20
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+2
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 40
+----------------
+@ Output stream: 
+0
+1
+2
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(Ref(int) a; (new(a,20); (for(v=0;v<3;v=v+1); print(rH(a)))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+Ref(int) a
+(new(a,20); (for(v=0;v<3;v=v+1); print(rH(a))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(new(a,20); (for(v=0;v<3;v=v+1); print(rH(a))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+new(a,20)
+(for(v=0;v<3;v=v+1); print(rH(a)))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(for(v=0;v<3;v=v+1); print(rH(a)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+for(v=0;v<3;v=v+1)
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1)))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1)))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=0
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 20
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+2
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 40
+----------------
+@ Output stream: 
+0
+1
+2
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(Ref(int) a; (new(a,20); (for(v=0;v<3;v=v+1); print(rH(a)))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+Ref(int) a
+(new(a,20); (for(v=0;v<3;v=v+1); print(rH(a))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(new(a,20); (for(v=0;v<3;v=v+1); print(rH(a))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+new(a,20)
+(for(v=0;v<3;v=v+1); print(rH(a)))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(for(v=0;v<3;v=v+1); print(rH(a)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+for(v=0;v<3;v=v+1)
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(int v; (v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+int v
+(v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1)))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1)))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+v=0
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 7
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 7
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 7
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 7
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 20
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 8
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 8
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 8
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+2
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 8
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 40
+----------------
+@ Output stream: 
+0
+1
+2
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(Ref(int) a; (new(a,20); (for(v=0;v<3;v=v+1)fork((print(v); v=v*rH(a))); print(rH(a)))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+Ref(int) a
+(new(a,20); (for(v=0;v<3;v=v+1)fork((print(v); v=v*rH(a))); print(rH(a))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(new(a,20); (for(v=0;v<3;v=v+1)fork((print(v); v=v*rH(a))); print(rH(a))))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+new(a,20)
+(for(v=0;v<3;v=v+1)fork((print(v); v=v*rH(a))); print(rH(a)))
+---------------
+@ Symbol table: 
+a --> (0,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(for(v=0;v<3;v=v+1)fork((print(v); v=v*rH(a))); print(rH(a)))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+for(v=0;v<3;v=v+1)fork((print(v); v=v*rH(a)))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1)))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=0; ( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1)))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=0
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 0
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((print(v); v=v*rH(a))); v=v+1)
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 1
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((print(v); v=v*rH(a)))
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 20
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=v+1
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(print(v); v=v*rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+( while(v < 3) (fork((print(v); v=v*rH(a))); v=v+1))
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+print(v)
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(rH(a))
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+v=v*rH(a)
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 2
+----------------
+@ Output stream: 
+0
+1
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 3
+----------------
+@ Output stream: 
+0
+1
+2
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+a --> (1,int)
+v --> 40
+----------------
+@ Output stream: 
+0
+1
+2
+20
+-------------
+@ File table: 
+-------
+@ Heap:
+1 --> 20
+
+
