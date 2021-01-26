@@ -1,0 +1,8361 @@
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure sum[a, b] (int v; (v=a+b; print(v))); (procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure sum[a, b] (int v; (v=a+b; print(v)))
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure product[a, b] (int v; (v=a*b; print(v)))
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int w
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=2
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+w=5
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+call sum[v*10, w]
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(call product[v, w]; fork(call sum[v, w]))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+call product[v, w]
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(int v; (v=a*b; print(v)))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+int v
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=a*b
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+call sum[v, w]
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(procedure sum[a, b] (int v; (v=a+b; print(v))); (procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+procedure sum[a, b] (int v; (v=a+b; print(v)))
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+procedure product[a, b] (int v; (v=a*b; print(v)))
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+int v
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+int w
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+v=2
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+w=5
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+call sum[v*10, w]
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+print(v)
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(call product[v, w]; fork(call sum[v, w]))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+call product[v, w]
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(int v; (v=a*b; print(v)))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+int v
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+v=a*b
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+call sum[v, w]
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] w/ body: (int v; (v=a*b; print(v)))
+sum --> [a, b] w/ body: (int v; (v=a+b; print(v)))
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure sum[a, b] (int v; (v=a+b; print(v))); (procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure sum[a, b] (int v; (v=a+b; print(v)))
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure product[a, b] (int v; (v=a*b; print(v)))
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int w
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=2
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+w=5
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+call sum[v*10, w]
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(call product[v, w]; fork(call sum[v, w]))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+call product[v, w]
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(int v; (v=a*b; print(v)))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+int v
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=a*b
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+call sum[v, w]
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(procedure sum[a, b] (int v; (v=a+b; print(v))); (procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+procedure sum[a, b] (int v; (v=a+b; print(v)))
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+procedure product[a, b] (int v; (v=a*b; print(v)))
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+int v
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+int w
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+v=2
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+w=5
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+call sum[v*10, w]
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+print(v)
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 10
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+(call product[v, w]; fork(call sum[v, w]))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+call product[v, w]
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+(int v; (v=a*b; print(v)))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+int v
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+v=a*b
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 11
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+call sum[v, w]
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 12
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure sum[a, b] (int v; (v=a+b; print(v))); (procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure sum[a, b] (int v; (v=a+b; print(v)))
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure product[a, b] (int v; (v=a*b; print(v)))
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int w
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=2
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+w=5
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+call sum[v*10, w]
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(call product[v, w]; fork(call sum[v, w]))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+call product[v, w]
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(int v; (v=a*b; print(v)))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+int v
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=a*b
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+call sum[v, w]
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure sum[a, b] (int v; (v=a+b; print(v))); (procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure sum[a, b] (int v; (v=a+b; print(v)))
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure product[a, b] (int v; (v=a*b; print(v)))
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int w
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=2
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+w=5
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+call sum[v*10, w]
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(call product[v, w]; fork(call sum[v, w]))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+call product[v, w]
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(int v; (v=a*b; print(v)))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+int v
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=a*b
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+call sum[v, w]
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure sum[a, b] (int v; (v=a+b; print(v))); (procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure sum[a, b] (int v; (v=a+b; print(v)))
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure product[a, b] (int v; (v=a*b; print(v)))
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int w
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=2
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+w=5
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+call sum[v*10, w]
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(call product[v, w]; fork(call sum[v, w]))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+call product[v, w]
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(int v; (v=a*b; print(v)))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+int v
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=a*b
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+call sum[v, w]
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(procedure sum[a, b] (int v; (v=a+b; print(v))); (procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+procedure sum[a, b] (int v; (v=a+b; print(v)))
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+procedure product[a, b] (int v; (v=a*b; print(v)))
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+int v
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+int w
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+v=2
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+w=5
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+call sum[v*10, w]
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+print(v)
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(call product[v, w]; fork(call sum[v, w]))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+call product[v, w]
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(int v; (v=a*b; print(v)))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+int v
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+v=a*b
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 5
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+call sum[v, w]
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 6
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure sum[a, b] (int v; (v=a+b; print(v))); (procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure sum[a, b] (int v; (v=a+b; print(v)))
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(procedure product[a, b] (int v; (v=a*b; print(v))); (int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+procedure product[a, b] (int v; (v=a*b; print(v)))
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int w; (v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int w
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=2; (w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=2
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 0
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(w=5; (call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+w=5
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(call sum[v*10, w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+call sum[v*10, w]
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+return
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+a --> 20
+b --> 5
+v --> 25
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(print(v); fork((call product[v, w]; fork(call sum[v, w]))))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v)
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((call product[v, w]; fork(call sum[v, w])))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(call product[v, w]; fork(call sum[v, w]))
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+call product[v, w]
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(int v; (v=a*b; print(v)))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+int v
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(v=a*b; print(v))
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=a*b
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+print(v)
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+return
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 10
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+fork(call sum[v, w])
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+call sum[v, w]
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(int v; (v=a+b; print(v)))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+int v
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(v=a+b; print(v))
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=a+b
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 0
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v)
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+return
+---------------
+@ Symbol table: 
+a --> 2
+b --> 5
+v --> 7
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 2
+w --> 5
+----------------
+@ Output stream: 
+25
+2
+10
+7
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+product --> [a, b] body: (int v; (v=a*b; print(v)))
+sum --> [a, b] body: (int v; (v=a+b; print(v)))
+
+

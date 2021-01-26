@@ -1,0 +1,934 @@
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(int v; (v=10; (fork((v=v-1; (v=v-1; print(v)))); (sleep(10); print(v*10)))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+int v
+(v=10; (fork((v=v-1; (v=v-1; print(v)))); (sleep(10); print(v*10))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(v=10; (fork((v=v-1; (v=v-1; print(v)))); (sleep(10); print(v*10))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+v=10
+(fork((v=v-1; (v=v-1; print(v)))); (sleep(10); print(v*10)))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(fork((v=v-1; (v=v-1; print(v)))); (sleep(10); print(v*10)))
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+fork((v=v-1; (v=v-1; print(v))))
+(sleep(10); print(v*10))
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+(sleep(10); print(v*10))
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(v=v-1; (v=v-1; print(v)))
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+sleep(10)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=v-1
+(v=v-1; print(v))
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+sleep(9)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+(v=v-1; print(v))
+---------------
+@ Symbol table: 
+v --> 9
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+sleep(8)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+v=v-1
+print(v)
+---------------
+@ Symbol table: 
+v --> 9
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+sleep(7)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+print(v)
+---------------
+@ Symbol table: 
+v --> 8
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+sleep(6)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 2
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 8
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+sleep(5)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+sleep(4)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+sleep(3)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+sleep(2)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+sleep(1)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+sleep(0)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 1
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+PROGRAM EXECUTION START ---------------------------------------------------------------
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(int v; (v=10; (fork((v=v-1; (v=v-1; print(v)))); (sleep(10); print(v*10)))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+int v
+(v=10; (fork((v=v-1; (v=v-1; print(v)))); (sleep(10); print(v*10))))
+---------------
+@ Symbol table: 
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(v=10; (fork((v=v-1; (v=v-1; print(v)))); (sleep(10); print(v*10))))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+v=10
+(fork((v=v-1; (v=v-1; print(v)))); (sleep(10); print(v*10)))
+---------------
+@ Symbol table: 
+v --> 0
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(fork((v=v-1; (v=v-1; print(v)))); (sleep(10); print(v*10)))
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+fork((v=v-1; (v=v-1; print(v))))
+(sleep(10); print(v*10))
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+(sleep(10); print(v*10))
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(v=v-1; (v=v-1; print(v)))
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+sleep(10)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+v=v-1
+(v=v-1; print(v))
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+sleep(9)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+(v=v-1; print(v))
+---------------
+@ Symbol table: 
+v --> 9
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+sleep(8)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+v=v-1
+print(v)
+---------------
+@ Symbol table: 
+v --> 9
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+sleep(7)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+print(v)
+---------------
+@ Symbol table: 
+v --> 8
+----------------
+@ Output stream: 
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+sleep(6)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 4
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 8
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+sleep(5)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+sleep(4)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+sleep(3)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+sleep(2)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+sleep(1)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+sleep(0)
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+print(v*10)
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
+@ Program state ID: 3
+------------------
+@ Execution stack: 
+---------------
+@ Symbol table: 
+v --> 10
+----------------
+@ Output stream: 
+8
+100
+-------------
+@ File table: 
+-------
+@ Heap:
+----------------
+@ ProcedureTable:
+
+
